@@ -1,0 +1,60 @@
+#백준1205
+# n, newscore, p = map(int, input().split())
+# if n == 0:
+#     print(1)
+# else:
+#     scores = list(map(int, input().split()))
+#     if n == p and scores[-1] >= newscore:
+#         print(-1)
+#     else:
+#         rank = n + 1
+#         for i in range(n):
+#             if scores[i] <= newscore:
+#                 rank = i + 1
+#                 break
+#         print(rank)
+
+
+
+
+#복습
+# def myint(x, base = 10):
+#     result = 0
+#     x = x[::-1]
+#     alphabet = {'A':10,'B':11,'C':12,'D':13,'E':14,'F':15}
+#     for i in range(len(x)):
+#         if x[i].isalpha():
+#             result += alphabet[x[i]] * (base ** i)
+#         else:
+#             result += int(x[i]) * (base ** i)
+#     return result
+# print(myint('FF',16))
+# print(myint('1010',2))
+# print(myint('1010',8))
+
+
+
+
+
+
+
+
+
+
+
+# a = "Hello World"
+# a = a[0].upper() + a[1:].lower() # == capitalize()
+# print(a)
+
+
+
+
+
+
+a = "Hello World"
+def myfind(string,substr,start = 0,end = -1):
+    for i in range(start, end):
+        if string[i] == substr[0]:
+            return i
+        
+print(myfind(a, 'l', 4))
